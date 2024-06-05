@@ -10,3 +10,15 @@
   border: 15px solid blue;
   border-radius: 13px;
 }
+
+.text-danger {
+  color: goldenrod;
+  border: 15px solid blue;
+  border-radius: 13px;
+} 
+
+.text-info {
+  color: blue;
+  border: 15px solid blue;
+  border-radius: 13px;
+}
