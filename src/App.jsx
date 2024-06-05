@@ -11,7 +11,7 @@
 
       <h1 className={classTitle}>My App Hola Soy React</h1>
       <h2>{title}</h2>
-      <img src={pathImg} alt="Gif" />
+      <img src={pathImg} alt={`imagen-${title}`} />
     
     </>
   );
