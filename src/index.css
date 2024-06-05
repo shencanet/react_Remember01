@@ -3,3 +3,10 @@
   color: red;
   border: 15px solid blue;
 }
+
+
+.text-dark {
+  color: green;
+  border: 15px solid blue;
+  border-radius: 13px;
+}
