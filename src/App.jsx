@@ -1,5 +1,8 @@
  
- 
+  export  const MyButton = () => {
+  return <button>Click me!</button>;
+}
+
  export const App = () => { 
     const title = 'My App Hola Soy React arriba ';
     const classTitle = 'text-center';

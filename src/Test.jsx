@@ -30,3 +30,5 @@ const Shen = () => {
     }
 
     export default Shen;
+
+    //componente en mayuscula   
