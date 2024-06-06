@@ -4,6 +4,7 @@ import App from './App.jsx'//importacion por defecto
 //import { App } from './App.jsx'//importacion nombrada entre llaves
 import Shen from './Test.jsx'
 import './index.css'
+import MyBotton from './RenderizadoCondicional.jsx'
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
@@ -12,6 +13,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
 
     <App />
     <Shen />
+    <MyBotton />
 
 
 

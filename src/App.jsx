@@ -25,6 +25,7 @@ const App = () => {
       <MyButton text = 'Boton 1'/>
       <MyButton text = 'Boton 2'/>
       <MyButton text = 'Boton 3'/>
+      
       <ul>
         {Fruits.map((fruit, index) => (
           <li key={index}>{fruit}</li>
