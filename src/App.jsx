@@ -1,7 +1,8 @@
 // Define MyButton component windows punto emogis
-const MyButton = () => {
+const MyButton = (props) => {
+  console.log(props);
   return (
-  <button>Click me!</button>
+  <button>{props.text}</button>
 ); 
 };
 
@@ -21,7 +22,9 @@ const App = () => {
       <h2>{title}</h2>
       <img src={pathImg} alt={`imagen-${title}`} />
 
-      <MyButton />
+      <MyButton text = 'Boton 1'/>
+      <MyButton text = 'Boton 2'/>
+      <MyButton text = 'Boton 3'/>
       <ul>
         {Fruits.map((fruit, index) => (
           <li key={index}>{fruit}</li>
