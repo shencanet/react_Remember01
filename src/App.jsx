@@ -1,38 +1,45 @@
-// Define MyButton component windows punto emogis
-const MyButton = (props) => {
-  console.log(props);
+import React from 'react';
+
+// Define MyButton component with destructuring of props to get text
+const MyButton = ({ text }) => {
+  console.log(text);
   return (
-  <button>{props.text}</button>
-); 
+    <button>{text}</button>
+  );
 };
 
-const App = () => { 
-    const title = 'My App Hola Soy React arriba ';
-    const classTitle = 'text-center';
-    const pathImg = 'https://media.giphy.com/media/3o7TKz9bX9v6hZ8NSA/giphy.gif';
-
-    const Fruits = [ '💋', '✌', '✔', '👍', '👌', '👏', '👀', '👅', '👄', '👂', '👃', '👆', '👇', '👈', '👉', '👊', '👋', '👎']
-
- 
+// Define ItemFruit component with destructuring of props to get fruit
+const ItemFruit = ({ fruit }) => {
   return (
-    
-    <>
+    <li>{fruit}</li>
+  );
+};
 
-      <h1 className={classTitle}>My App Hola Soy React</h1>
-      <h2>{title}</h2>
+// Main App component
+const App = () => {
+  const title = 'My App Hola Soy React arriba';
+  const classTitle = 'text-center';
+  const pathImg = 'https://media.giphy.com/media/3o7TKz9bX9v6hZ8NSA/giphy.gif';
+
+  // Array of fruits emojis
+  const fruits = ['💋', '✌', '✔', '👍', '👌', '👏', '👀', '👅', '👄', '👂', '👃', '👆', '👇', '👈', '👉', '👊', '👋', '👎'];
+
+  return (
+    <>
+      <h1 className={classTitle}>{title}</h1>
       <img src={pathImg} alt={`imagen-${title}`} />
 
-      <MyButton text = 'Boton 1'/>
-      <MyButton text = 'Boton 2'/>
-      <MyButton text = 'Boton 3'/>
-      
+      <MyButton text='Boton 1' />
+      <MyButton text='Boton 2' />
+      <MyButton text='Boton 3' />
+
       <ul>
-        {Fruits.map((fruit, index) => (
-          <li key={index}>{fruit}</li>
+        {fruits.map((fruit, index) => (
+          <ItemFruit key={index} fruit={fruit} />
         ))}
-        </ul>
-    
+      </ul>
     </>
   );
 };
-export default App;//exportacion por defecto de la funcion App que es un componente de react que se encarga de renderizar el contenido en el navegador web 
+
+export default App; // Export App component as default export
