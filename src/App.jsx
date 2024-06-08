@@ -1,29 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import MyButton from './Components/MyButton';
+import MyButton from './Components/MyButton.jsx';
 
-
-/*
-// Componente MyButton para renderizar un botón con el texto proporcionado
-const MyButton = ({ text }) => {
-
-
-
-
- const handleClickbutton = (title) => {
-    console.log("HandleClickButton" + title);
- }
-
- 
-  return(
-    <button onClick={ ()=> handleClickbutton(" "+ text)}>
-        
-        {text}
-    
-    </button>
-  );
-  
-};*/
 
 // Prop types para el componente MyButton para la comprobación de tipos
 MyButton.propTypes = {
