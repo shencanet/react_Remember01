@@ -16,7 +16,5 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <MyBotton />
 
 
-
-
   </React.StrictMode>,
 )
