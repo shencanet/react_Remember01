@@ -4,8 +4,22 @@ import PropTypes from 'prop-types';
 // Componente MyButton para renderizar un botón con el texto proporcionado
 const MyButton = ({ text }) => {
   // Registrando el texto del botón en la consola para depuración
-  console.log(text);
-  return <button>{text}</button>;
+
+  //console.log(text);
+  //return <button onClick={()=> {console.log("me diste  click")}}>{text}</button>;
+ const handleClickbutton = (title) => {
+    console.log("HandleClickButton" + title);
+ }
+
+ 
+  return(
+    <button onClick={ ()=> handleClickbutton(" "+ text)}>
+        
+        {text}
+    
+    </button>
+  );
+  
 };
 
 // Prop types para el componente MyButton para la comprobación de tipos
