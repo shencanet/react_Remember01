@@ -5,6 +5,7 @@ import App from './App.jsx'//importacion por defecto
 import './index.css'
 import Shen from './Test.jsx'
 import ButtonState from './Components/ButtonState.jsx'
+import ButtonStyle from './Components/Counter.jsx'
 
 
 
@@ -15,6 +16,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <App />
     <Shen />
     <ButtonState />
+    <ButtonStyle />
 
 
 
